@@ -1,7 +1,7 @@
 {
-  "buildCommand": "echo 'Build já realizado localmente'",
+  "buildCommand": "flutter/bin/flutter build web --release",
   "outputDirectory": "build/web",
-  "installCommand": "echo 'Sem instalação necessária'",
+  "installCommand": "if cd flutter; then git pull && cd .. ; else git clone https://github.com/flutter/flutter.git; fi && ls && flutter/bin/flutter doctor && flutter/bin/flutter clean && flutter/bin/flutter config --enable-web",
   "rewrites": [
     {
       "source": "/(.*)",
