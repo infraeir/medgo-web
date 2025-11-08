@@ -1,6 +1,7 @@
 {
-  "buildCommand": "./build.sh",
+  "buildCommand": "flutter/bin/flutter build web --release",
   "outputDirectory": "build/web",
+  "installCommand": "git clone https://github.com/flutter/flutter.git --depth 1 && cd flutter && git fetch --tags && git checkout 3.35.4 && cd .. && flutter/bin/flutter --version && flutter/bin/flutter doctor -v && flutter/bin/flutter config --enable-web",
   "rewrites": [
     {
       "source": "/(.*)",
