@@ -1,0 +1,336 @@
+        {
+            "searchTerm": "test",
+            "displayName": "TestMed Complex",
+            "type": "similar",
+            "medications": [
+                {
+                    "id": "68f119856585d179a0b543be",
+                    "name": "Complexo Analgésico + Ferro + Vitamina D",
+                    "anvisaRegistrationCode": "TEST123456789",
+                    "tradeName": "TestMed Complex"
+                }
+            ],
+            "presentationsByRegistration": {
+                "TEST123456789-001": {
+                    "registration": "TEST123456789-001",
+                    "package": {
+                        "primary": {
+                            "dispensationUnit": "tablet",
+                            "quantity": 30,
+                            "concentration": {
+                                "value": 500,
+                                "unit": "mg"
+                            }
+                        },
+                        "secondary": {
+                            "dispensationUnit": "box",
+                            "quantity": 1
+                        }
+                    },
+                    "packageUnitViscosityPerUnit": null,
+                    "packagePriceValue": 25.9,
+                    "packageUnitActiveIngredientConcentration": null,
+                    "dosageTemplate": "Tomar {{dosage}} comprimido(s) a cada 8 horas"
+                },
+                "TEST123456789-002": {
+                    "registration": "TEST123456789-002",
+                    "package": {
+                        "primary": {
+                            "dispensationUnit": "tablet",
+                            "quantity": 20,
+                            "concentration": {
+                                "value": 750,
+                                "unit": "mg"
+                            }
+                        },
+                        "secondary": {
+                            "dispensationUnit": "box",
+                            "quantity": 1
+                        }
+                    },
+                    "packageUnitViscosityPerUnit": null,
+                    "packagePriceValue": 35.5,
+                    "packageUnitActiveIngredientConcentration": null,
+                    "dosageTemplate": "Tomar {{dosage}} comprimido(s) a cada 12 horas"
+                },
+                "TEST123456789-003": {
+                    "registration": "TEST123456789-003",
+                    "package": {
+                        "primary": {
+                            "dispensationUnit": "bottle",
+                            "quantity": 100,
+                            "concentration": {
+                                "value": 5,
+                                "unit": "mg_per_mL"
+                            }
+                        },
+                        "secondary": {
+                            "dispensationUnit": "box",
+                            "quantity": 1
+                        }
+                    },
+                    "packageUnitViscosityPerUnit": 20,
+                    "packagePriceValue": 42.8,
+                    "packageUnitActiveIngredientConcentration": null,
+                    "dosageTemplate": "Dar {{dosage}} mL a cada 6 horas"
+                }
+            },
+            "availableInPopularPharmacy": true,
+            "availableInSUS": false,
+            "isControlledSubstance": false,
+            "filters": {
+                "categories": {
+                    "oral": {
+                        "routes": {
+                            "oral": {
+                                "bases": {
+                                    "tablet": {
+                                        "activeIngredients": [
+                                            {
+                                                "name": "Colecalciferol",
+                                                "dcbCode": "1643",
+                                                "combinations": {
+                                                    "1643_200_IU": [
+                                                        "5123_500_MG",
+                                                        "4987_200_MG",
+                                                        "8294_25_MG_PER_ML"
+                                                    ],
+                                                    "1643_400_IU": [
+                                                        "5123_750_MG",
+                                                        "4987_400_MG",
+                                                        "8294_50_MG_PER_ML"
+                                                    ]
+                                                },
+                                                "strengths": [
+                                                    {
+                                                        "id": "1643_200_IU",
+                                                        "value": 200,
+                                                        "unit": "IU",
+                                                        "marked": false
+                                                    },
+                                                    {
+                                                        "id": "1643_400_IU",
+                                                        "value": 400,
+                                                        "unit": "IU",
+                                                        "marked": false
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "Ibuprofeno",
+                                                "dcbCode": "4987",
+                                                "combinations": {
+                                                    "4987_200_MG": [
+                                                        "5123_500_MG",
+                                                        "8294_25_MG_PER_ML",
+                                                        "1643_200_IU"
+                                                    ],
+                                                    "4987_400_MG": [
+                                                        "5123_500_MG",
+                                                        "5123_750_MG",
+                                                        "8294_50_MG_PER_ML",
+                                                        "1643_400_IU"
+                                                    ]
+                                                },
+                                                "strengths": [
+                                                    {
+                                                        "id": "4987_200_MG",
+                                                        "value": 200,
+                                                        "unit": "MG",
+                                                        "marked": false
+                                                    },
+                                                    {
+                                                        "id": "4987_400_MG",
+                                                        "value": 400,
+                                                        "unit": "MG",
+                                                        "marked": false
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "Paracetamol",
+                                                "dcbCode": "5123",
+                                                "combinations": {
+                                                    "5123_500_MG": [
+                                                        "4987_200_MG",
+                                                        "4987_400_MG",
+                                                        "8294_25_MG_PER_ML",
+                                                        "1643_200_IU"
+                                                    ],
+                                                    "5123_750_MG": [
+                                                        "4987_400_MG",
+                                                        "8294_50_MG_PER_ML",
+                                                        "1643_400_IU"
+                                                    ]
+                                                },
+                                                "strengths": [
+                                                    {
+                                                        "id": "5123_500_MG",
+                                                        "value": 500,
+                                                        "unit": "MG",
+                                                        "marked": false
+                                                    },
+                                                    {
+                                                        "id": "5123_750_MG",
+                                                        "value": 750,
+                                                        "unit": "MG",
+                                                        "marked": false
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "Ferro",
+                                                "dcbCode": "8294",
+                                                "combinations": {},
+                                                "strengths": [
+                                                    {
+                                                        "id": "8294_25_MG",
+                                                        "value": 25,
+                                                        "unit": "MG",
+                                                        "marked": false
+                                                    },
+                                                    {
+                                                        "id": "8294_50_MG",
+                                                        "value": 50,
+                                                        "unit": "MG",
+                                                        "marked": false
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "presentationsByCombination": {
+                                            "5123_500_MG_PLUS_4987_200_MG_PLUS_8294_25_MG_PLUS_1643_200_IU": [
+                                                "TEST123456789-001"
+                                            ],
+                                            "5123_750_MG_PLUS_4987_400_MG_PLUS_8294_50_MG_PLUS_1643_400_IU": [
+                                                "TEST123456789-002"
+                                            ]
+                                        }
+                                    },
+                                    "oral_solution": {
+                                        "activeIngredients": [
+                                            {
+                                                "name": "Colecalciferol",
+                                                "dcbCode": "1643",
+                                                "combinations": {
+                                                    "1643_200_IU": [
+                                                        "5123_500_MG",
+                                                        "4987_200_MG",
+                                                        "8294_25_MG_PER_ML"
+                                                    ],
+                                                    "1643_400_IU": [
+                                                        "5123_750_MG",
+                                                        "4987_400_MG",
+                                                        "8294_50_MG_PER_ML"
+                                                    ]
+                                                },
+                                                "strengths": [
+                                                    {
+                                                        "id": "1643_200_IU",
+                                                        "value": 200,
+                                                        "unit": "IU",
+                                                        "marked": false
+                                                    },
+                                                    {
+                                                        "id": "1643_400_IU",
+                                                        "value": 400,
+                                                        "unit": "IU",
+                                                        "marked": false
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "Ibuprofeno",
+                                                "dcbCode": "4987",
+                                                "combinations": {
+                                                    "4987_200_MG": [
+                                                        "5123_500_MG",
+                                                        "8294_25_MG_PER_ML",
+                                                        "1643_200_IU"
+                                                    ],
+                                                    "4987_400_MG": [
+                                                        "5123_500_MG",
+                                                        "5123_750_MG",
+                                                        "8294_50_MG_PER_ML",
+                                                        "1643_400_IU"
+                                                    ]
+                                                },
+                                                "strengths": [
+                                                    {
+                                                        "id": "4987_200_MG",
+                                                        "value": 200,
+                                                        "unit": "MG",
+                                                        "marked": false
+                                                    },
+                                                    {
+                                                        "id": "4987_400_MG",
+                                                        "value": 400,
+                                                        "unit": "MG",
+                                                        "marked": false
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "Paracetamol",
+                                                "dcbCode": "5123",
+                                                "combinations": {
+                                                    "5123_500_MG": [
+                                                        "4987_200_MG",
+                                                        "4987_400_MG",
+                                                        "8294_25_MG_PER_ML",
+                                                        "1643_200_IU"
+                                                    ],
+                                                    "5123_750_MG": [
+                                                        "4987_400_MG",
+                                                        "8294_50_MG_PER_ML",
+                                                        "1643_400_IU"
+                                                    ]
+                                                },
+                                                "strengths": [
+                                                    {
+                                                        "id": "5123_500_MG",
+                                                        "value": 500,
+                                                        "unit": "MG",
+                                                        "marked": false
+                                                    },
+                                                    {
+                                                        "id": "5123_750_MG",
+                                                        "value": 750,
+                                                        "unit": "MG",
+                                                        "marked": false
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "Ferro",
+                                                "dcbCode": "8294",
+                                                "combinations": {},
+                                                "strengths": [
+                                                    {
+                                                        "id": "8294_25_MG",
+                                                        "value": 25,
+                                                        "unit": "MG",
+                                                        "marked": false
+                                                    },
+                                                    {
+                                                        "id": "8294_50_MG",
+                                                        "value": 50,
+                                                        "unit": "MG",
+                                                        "marked": false
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "presentationsByCombination": {
+                                            "5123_5_MG_PER_ML_PLUS_4987_5_MG_PER_ML_PLUS_8294_5_MG_PER_ML_PLUS_1643_5_IU_PER_ML": [
+                                                "TEST123456789-003"
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }

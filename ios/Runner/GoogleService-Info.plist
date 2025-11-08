@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>270396933897-9t2g90ogbe3us8ldb5a0j7kcqvic0eel.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.270396933897-9t2g90ogbe3us8ldb5a0j7kcqvic0eel</string>
+	<key>API_KEY</key>
+	<string>AIzaSyApx_Wagb0LRganJQhWG9CTRnvmbcld2rA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>270396933897</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.medgo</string>
+	<key>PROJECT_ID</key>
+	<string>medgo-a3ebf</string>
+	<key>STORAGE_BUCKET</key>
+	<string>medgo-a3ebf.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:270396933897:ios:2300d0419e1cc5fdde35d8</string>
+	<key>DATABASE_URL</key>
+	<string>https://medgo-a3ebf-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

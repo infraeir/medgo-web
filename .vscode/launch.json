@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "(DEV)",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define-from-file",
+                "dev_config.json",
+            ]
+        },
+        {
+            "name": "(PROD)",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "--dart-define-from-file",
+                "prod_config.json",
+            ]
+        },
+    ],
+}

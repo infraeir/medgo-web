@@ -1,0 +1,38 @@
+# Vercel ignore - arquivos que não precisam ser enviados
+.git
+.github
+.vscode
+.idea
+node_modules
+coverage
+test
+android
+ios
+linux
+macos
+windows
+web
+medgo
+.flutter-plugins
+.flutter-plugins-dependencies
+.dart_tool
+.packages
+pubspec.lock
+
+# Docker files (não necessários para Vercel)
+Dockerfile
+docker-compose.yml
+nginx.conf
+.dockerignore
+
+# Heroku files (não necessários para Vercel)
+Procfile
+heroku.yml
+server.js
+package.json.heroku-only
+package-lock.json
+
+# Outros
+*.log
+.env
+.env.local

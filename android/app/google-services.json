@@ -1,0 +1,47 @@
+{
+    "project_info": {
+      "project_number": "270396933897",
+      "firebase_url": "https://medgo-a3ebf-default-rtdb.firebaseio.com",
+      "project_id": "medgo-a3ebf",
+      "storage_bucket": "medgo-a3ebf.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:270396933897:android:f212373993095a36de35d8",
+          "android_client_info": {
+            "package_name": "com.example.medgo"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "270396933897-rfaoc7ai1fdmvd1bjacpmrmplao87kan.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyDAw68VR31Orgr8F4rXxYQEsdJuWNJlHYc"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "270396933897-rfaoc7ai1fdmvd1bjacpmrmplao87kan.apps.googleusercontent.com",
+                "client_type": 3
+              },
+              {
+                "client_id": "270396933897-9t2g90ogbe3us8ldb5a0j7kcqvic0eel.apps.googleusercontent.com",
+                "client_type": 2,
+                "ios_info": {
+                  "bundle_id": "com.example.medgo"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }

@@ -1,0 +1,32 @@
+# Ignorar arquivos e diretórios comuns
+.git
+.gitignore
+Dockerfile
+.dockerignore
+
+# Ignorar arquivos de build e caches
+build/
+**/build/
+flutter/bin/cache/
+flutter/bin/internal/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache
+.pub/
+.idea/
+.vscode/
+
+# Ignorar arquivos de configuração e de ambiente
+*.iml
+*.log
+*.lock
+*.pyc
+*.pyo
+*.sqlite
+*.DS_Store
+
+# Ignorar arquivos específicos do Flutter
+.metadata
+.packages
+*.dart_tool/

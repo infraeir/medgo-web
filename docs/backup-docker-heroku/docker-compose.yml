@@ -1,0 +1,19 @@
+services:
+  medgo-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: medgo-app:latest
+    restart: always
+    environment:
+      - PORT=80
+    ports:
+      - "3002:80"
+    volumes:
+      - .:/app
+    networks:
+      - shared-services
+
+networks:
+  shared-services:
+    external: true
