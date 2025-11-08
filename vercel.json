@@ -1,7 +1,7 @@
 {
-  "buildCommand": "flutter/bin/flutter build web --release",
+  "buildCommand": "flutter/bin/flutter clean && flutter/bin/flutter pub get && flutter/bin/flutter build web --release --web-renderer canvaskit --no-tree-shake-icons",
   "outputDirectory": "build/web",
-  "installCommand": "git clone https://github.com/flutter/flutter.git -b 3.35.4 --depth 1 && flutter/bin/flutter --version && flutter/bin/flutter config --enable-web && flutter/bin/flutter pub get",
+  "installCommand": "git clone https://github.com/flutter/flutter.git -b 3.35.4 --depth 1 && flutter/bin/flutter --version && flutter/bin/flutter doctor -v && flutter/bin/flutter config --enable-web",
   "rewrites": [
     {
       "source": "/(.*)",
