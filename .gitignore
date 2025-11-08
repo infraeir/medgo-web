@@ -31,8 +31,8 @@ node_modules/
 .packages
 .pub-cache/
 .pub/
-/build/
-# Exceto build/web (usado para deploy)
+# Build directory - mas mantém build/web para deploy
+/build/*
 !/build/web/
 
 # Symbolication related

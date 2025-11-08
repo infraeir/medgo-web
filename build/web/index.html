@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="medgo">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Logo.png"/>
+
+  <title>medgo</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "336670539";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+  <style>
+    /* Loading screen styles */
+    .loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    
+    .loading-logo {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+    }
+    
+    .loading-spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: #004155;
+      animation: spin 1s ease-in-out infinite;
+    }
+    
+    .loading-text {
+      color: #004155;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 16px;
+      margin-top: 20px;
+      opacity: 0.8;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    
+    /* Hide loading when Flutter is ready */
+    .flutter-ready .loading-container {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading screen -->
+  <div class="loading-container" id="loading">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Carregando MedGo...</div>
+  </div>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          // Usar configuração padrão mais simples para evitar falhas
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            // Hide loading screen
+            try {
+              document.body.classList.add('flutter-ready');
+              const loading = document.getElementById('loading');
+              if (loading) loading.style.display = 'none';
+            } catch (e) {
+              console.log('Loading screen already hidden');
+            }
+            appRunner.runApp();
+          }).catch(function(error) {
+            console.error('Flutter initialization failed:', error);
+            // Mostrar erro mais amigável
+            const loading = document.getElementById('loading');
+            if (loading) {
+              loading.innerHTML = 
+                '<div style="color: white; text-align: center; padding: 20px;">' +
+                '<h2>Erro ao carregar aplicação</h2>' +
+                '<p>Tentando recarregar automaticamente...</p>' +
+                '</div>';
+              
+              // Tentar recarregar após 3 segundos
+              setTimeout(() => {
+                window.location.reload();
+              }, 3000);
+            }
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
